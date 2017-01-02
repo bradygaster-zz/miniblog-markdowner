@@ -71,7 +71,7 @@ fs.readdirSync(directory).forEach((file, index, arr) => {
                     var src = $(element).attr('src');
                     if (!src.startsWith('http') && !src.startsWith('/image.axd')) {
                         src = src.replace(/\//g, '\\');
-                        newSrc = 'media\\' + path.basename(src);
+                        newSrc = '/posts/' + result.post.slug[0].toLowerCase() + '/media/' + path.basename(src);
                         newSrc = newSrc.replace(/\\/g, '/');
                         $(element).attr('src', newSrc);
                         try {
