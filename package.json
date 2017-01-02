@@ -1,0 +1,50 @@
+{
+  "name": "miniblog-markdowner",
+  "version": "0.0.0",
+  "description": "converter of miniblog xml to markdown",
+  "homepage": "",
+  "author": {
+    "name": "bradygaster",
+    "email": "bradyg@microsoft.com",
+    "url": "http://bradygaster.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    ""
+  ],
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.15.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "bradygaster/miniblog-markdowner",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "fs-extra": "^1.0.0",
+    "html-entities": "^1.2.0",
+    "pretty": "^1.0.0",
+    "sanitize-html": "^1.13.0",
+    "xml2js": "^0.4.17"
+  }
+}
